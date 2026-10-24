@@ -9,7 +9,7 @@ on:
 jobs:
   saludar:
     runs-on: ubuntu-latest
-  steps:
-    -uses: actions/checkout@v4
-    -run: echo "hola ${{ github.actor }}, comit ${{ github.sha }}"
-    -run: 'echo "elegiste: ${{ inputs.saludo }}"'
+    steps:
+      -uses: actions/checkout@v4
+      -run: echo "hola ${{ github.actor }}, comit ${{ github.sha }}"
+      -run: 'echo "elegiste: ${{ inputs.saludo }}"'
