@@ -8,8 +8,8 @@ on:
         options: [hola, Buenas, Que tal]
 jobs:
   saludar:
-  runs-on: ububtu-latest
+    runs-on: ubuntu-latest
   steps:
-    -uses: acctions/checkout@v4
+    -uses: actions/checkout@v4
     -run: echo "hola ${{ github.actor }}, comit ${{ github.sha }}"
     -run: 'echo "elegiste: ${{ inputs.saludo }}"'
