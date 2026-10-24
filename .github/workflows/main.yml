@@ -5,7 +5,7 @@ on:
     inputs:
       saludo:
         type: choice
-        options:[hola, Buenas, Que tal]
+        options: [hola, Buenas, Que tal]
 jobs:
   saludar:
   runs-on: ububtu-latest
